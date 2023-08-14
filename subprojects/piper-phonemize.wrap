@@ -1,0 +1,14 @@
+[wrap-file]
+directory = libpiper_phonemize
+
+source_url = https://github.com/rhasspy/piper-phonemize/releases/download/v1.1.0/libpiper_phonemize-amd64.tar.gz
+source_filename = libpiper_phonemize.tar.gz
+source_hash = 4ddd5b25c4e7b30a731efc6694f9089aec64ab218fd4854a214c54e3277f2860
+
+lead_directory_missing = true
+patch_directory = libpiper_phonemize
+
+[provide]
+libpiper_phonemize = libpiper_phonemize_dep
+libespeak_ng = libespeak_ng_dep
+libonnxruntime = libonnxruntime_dep
