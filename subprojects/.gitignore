@@ -1,0 +1,9 @@
+*
+!.gitignore
+!*.wrap
+!packagefiles
+!packagefiles/**/*
+
+# Meson redirect wraps
+espeak-ng.wrap
+onnxruntime.wrap

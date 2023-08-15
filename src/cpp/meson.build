@@ -1,11 +1,11 @@
 piper_lib = library(
     'piper',
     'piper.cpp',
-    dependencies: [piper_phenomize, espeak, fmt, onnxruntime, spdlog],
+    dependencies: [piper_phenomize, fmt, spdlog],
 )
 piper_dep = declare_dependency(
     include_directories: '.',
-    dependencies: [piper_phenomize, espeak, fmt, onnxruntime, spdlog],
+    dependencies: [piper_phenomize, fmt, spdlog],
     link_with: piper_lib,
 )
 

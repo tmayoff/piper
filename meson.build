@@ -1,8 +1,6 @@
-project('piper', 'cpp')
+project('piper', 'cpp', default_options: ['cpp_std=c++17'])
 
-piper_phenomize = dependency('libpiper_phonemize')
-espeak = dependency('libespeak_ng')
-onnxruntime = dependency('libonnxruntime')
+piper_phenomize = dependency('piper_phonemize')
 
 spdlog = dependency('spdlog')
 fmt = dependency('fmt')
